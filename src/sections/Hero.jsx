@@ -1,6 +1,8 @@
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { shoes, statistics } from "../constants";
+import { bigShoe1 } from "../assets/images";
+
 
 const Hero = (label, iconURL) => {
   return (
@@ -40,6 +42,18 @@ const Hero = (label, iconURL) => {
           ))}
           
         </div>
+          </div>
+
+          <div className="relative flex-1 flex justify-center items-center xl:min-h-screen
+          max:lg:py-40 bg-primary bg-hero bg-center bg-cover">
+            <img src={bigShoe1} 
+            alt="big shoe collection"
+            height={610}
+            width={500}
+            className="relative z-10 object-contain" />
+
+           
+            
           </div>
     </section>
 
