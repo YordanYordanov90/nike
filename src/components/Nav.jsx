@@ -1,0 +1,17 @@
+import {headerLogo} from '../assets/images';
+import {hamburger} from '../assets/icons';
+
+
+const Nav = () => {
+  return (
+    <header>
+      <nav>
+        <a hraf=''>
+          <img src= {headerLogo} alt="Logo" width={130} />
+        </a>
+      </nav>
+    </header>
+  )
+}
+
+export default Nav
