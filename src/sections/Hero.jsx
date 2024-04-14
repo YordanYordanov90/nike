@@ -2,9 +2,13 @@ import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { shoes, statistics } from "../constants";
 import { bigShoe1 } from "../assets/images";
+import ShoeCard from "../components/ShoeCard";
+import { useState } from "react";
 
+const Hero = ({label, iconURL}) => {
 
-const Hero = (label, iconURL) => {
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
+
   return (
     <section id="home" className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
             
@@ -52,6 +56,18 @@ const Hero = (label, iconURL) => {
             width={500}
             className="relative z-10 object-contain" />
 
+          <div className='transition-transform duration-300 transform hover:scale-105 flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6 '>
+              {shoes.map((image, index) => (
+                <div key={index}>
+                  <ShoeCard
+                    index={index}
+                    imgURL={image}
+                    changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                    bigShoeImg={bigShoeImg}
+                  />
+                </div>
+              ))}
+            </div>
            
             
           </div>
