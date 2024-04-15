@@ -23,6 +23,7 @@ const Nav = () => {
                    leading-normal 
                    text-lg
                     text-slate-gray'
+                  
               >
                 {item.label}
               </a>

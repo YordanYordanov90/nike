@@ -15,7 +15,7 @@ const Hero = ({label, iconURL}) => {
           
         <div className="realtive xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
         
-        <div className="transition-transform duration-300 transform hover:scale-105 border-red-100 px-4 py-3 rounded relative my-5">
+        <div className="border-red-100 px-4 py-3 rounded relative my-5">
           <p className="text-xl font-montserrat text-coral-red">
             Our Summer collections
           </p>
