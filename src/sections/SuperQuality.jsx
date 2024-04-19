@@ -29,6 +29,8 @@ const SuperQuality = () => {
         <img src={shoe8} alt="shoe8 " width={570} height={722} className='object-contain transition-transform duration-300 transform hover:scale-105 ' />
 
       </div>
+      <div className=''></div>
+      
 
     </section>
   );
