@@ -48,15 +48,14 @@ const Hero = ({label, iconURL}) => {
         </div>
           </div>
 
-          <div className="relative flex-1 flex justify-center items-center xl:min-h-screen
-          max:lg:py-40 bg-primary bg-hero bg-center bg-cover">
+          <div className="relative flex-1 flex flex-col justify-center items-center xl:min-h-screen max:lg:py-40 bg-primary bg-hero bg-center bg-cover">
             <img src={bigShoe1} 
             alt="big shoe collection"
             height={610}
             width={500}
-            className="relative z-10 object-contain" />
+            className="relative z-10 object-contain bg-8 sm:mb-0" />
 
-          <div className='transition-transform duration-300 transform hover:scale-105 flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6 '>
+          <div className='transition-transform duration-300 transform hover:scale-105 flex flex-wrap justify-center sm:justify-start gap-4'>
               {shoes.map((image, index) => (
                 <div key={index}>
                   <ShoeCard
